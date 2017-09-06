@@ -33,7 +33,7 @@ namespace Uptake.Test
         public void cleanUp()
         {
             this._driver.Manage().Cookies.DeleteAllCookies();
-            this._driver.Quit();
+            //this._driver.Quit();
         }
 
 
