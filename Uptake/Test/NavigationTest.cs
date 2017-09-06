@@ -46,9 +46,9 @@ namespace Uptake.Test
                 Assert.AreEqual(about.getTitle().ToString(), "About");
                 Console.WriteLine("About Page opened successfully");
                 Products products = about.goToProducts(_driver);
-                Assert.AreEqual(about.getTitle().ToString(), "Products");
+                Assert.AreEqual(products.getTitle().ToString(), "Products");
                 Console.WriteLine("Products Page opened successfully");
-                products.goToAbout(_driver);
+               
             }
             catch (Exception ex)
             {

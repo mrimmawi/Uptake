@@ -19,3 +19,21 @@ c:\users\admin\documents\visual studio 2012\Projects\Uptake\Uptake\bin\Debug\Mic
 c:\users\admin\documents\visual studio 2012\Projects\Uptake\Uptake\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.xml
 c:\users\admin\documents\visual studio 2012\Projects\Uptake\Uptake\bin\Debug\Microsoft.VisualStudio.TestTools.UITesting.xml
 c:\users\admin\documents\visual studio 2012\Projects\Uptake\Uptake\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.xml
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\Uptake.exe.config
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\obj\Debug\Uptake.exe
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\obj\Debug\Uptake.pdb
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\Uptake.exe
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\Uptake.pdb
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.dll
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\Microsoft.VisualStudio.TestTools.UITesting.dll
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.dll
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.xml
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\Microsoft.VisualStudio.TestTools.UITesting.xml
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\Selenium.WebDriverBackedSelenium.pdb
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\WebDriver.pdb
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\WebDriver.xml
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\WebDriver.Support.pdb
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\WebDriver.Support.xml
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.xml
+C:\Users\admin\Source\Repos\Uptake\Uptake\Uptake\obj\Debug\Uptake.csprojResolveAssemblyReference.cache
