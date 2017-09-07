@@ -25,14 +25,21 @@ namespace Uptake.Test
 
         public void SetupTest()
         {
-        
 
-            this._driver = new FirefoxDriver();
-            this._wait = new WebDriverWait(this._driver, TimeSpan.FromSeconds(30));
-            _driver.Navigate().GoToUrl("http://www.uptake.com");
-            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            Console.WriteLine("Step 1: Uptake.com home page opened successfully");
+            try
+            {
+                this._driver = new FirefoxDriver();
+                this._wait = new WebDriverWait(this._driver, TimeSpan.FromSeconds(30));
+                _driver.Navigate().GoToUrl("http://www.uptake.com");
+                _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+                Console.WriteLine("Step 1: Uptake.com home page opened successfully");
 
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Step 1: " + ex.Message);
+            }
+            
             mainPage = new MainPage(_driver);
             about = new About(_driver);
             products = new Products(_driver);
