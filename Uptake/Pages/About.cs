@@ -20,18 +20,13 @@ namespace Uptake.Pages
 
         public About(IWebDriver driver) : base(driver)
         {
-
-          /*  if (driver.Title != "About")
-            {
-                Console.WriteLine("Wrong Page the Page is:" + driver.Title);
-            }
-            else
-            {
-                Console.WriteLine("About Page opened succesufully");
-            }
-            */
             PageFactory.InitElements(driver, this);
 
+        }
+
+        public override void goToPage()
+        {
+            _menu.goToAbout(driver);
         }
 
         public void goToProductivity()

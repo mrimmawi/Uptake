@@ -16,17 +16,12 @@ namespace Uptake.Pages
 
         public Products(IWebDriver driver) : base(driver)
         {
+            PageFactory.InitElements(driver, this);
+        }
 
-         /*   if (driver.Title != "Products")
-            {
-                Console.WriteLine("Wrong Page");
-            }
-            else
-            {
-                Console.WriteLine("good Page");
-            }
-            */
-
+        public override void goToPage()
+        {
+            _menu.goToProducts(driver);
         }
 
     }

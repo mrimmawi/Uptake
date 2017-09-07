@@ -17,18 +17,13 @@ namespace Uptake
 
         public MainPage(IWebDriver driver) : base(driver)
         {
-
-/*            if (driver.Title != "Analytics for the industrial internet")
-            {
-                Console.WriteLine("Wrong Page");
-            }
-            else
-            {
-                Console.WriteLine("good Page");
-            }
-  */          
-
+            PageFactory.InitElements(driver, this);
     
+        }
+
+        public override void goToPage()
+        {
+            _menu.goToMainPage(driver);
         }
 
     }

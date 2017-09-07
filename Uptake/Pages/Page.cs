@@ -11,13 +11,18 @@ using Uptake.Controls;
 namespace Uptake
 {
 
-    class Page : NavigationMenu
+    abstract class Page 
     {
         protected IWebDriver driver;
-        
+        protected NavigationMenu _menu;
+
+        abstract public void goToPage();
+
         public Page(IWebDriver driver)
         { 
             this.driver = driver;
+            this.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            _menu = new NavigationMenu(driver);
             PageFactory.InitElements(driver, this);
         }
 
@@ -25,6 +30,9 @@ namespace Uptake
         {
             return driver.Title;
         }
+
+        
+
 
     }
 }

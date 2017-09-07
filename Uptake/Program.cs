@@ -22,7 +22,7 @@ namespace Uptake
             NavigationTest NT = new NavigationTest();
             NT.SetupTest();
             NT.Test();
-           NT.cleanUp();
+            NT.cleanUp();
 
             Console.WriteLine("Done");
 

@@ -19,14 +19,23 @@ namespace Uptake.Test
 
         public IWebDriver _driver { get; set; }
         public WebDriverWait _wait { get; set; }
-        
+        MainPage mainPage;
+        About about;
+        Products products;
 
         public void SetupTest()
         {
+        
+
             this._driver = new FirefoxDriver();
             this._wait = new WebDriverWait(this._driver, TimeSpan.FromSeconds(30));
             _driver.Navigate().GoToUrl("http://www.uptake.com");
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            Console.WriteLine("Step 1: Uptake.com home page opened successfully");
 
+            mainPage = new MainPage(_driver);
+            about = new About(_driver);
+            products = new Products(_driver);
         }
 
 
@@ -39,20 +48,20 @@ namespace Uptake.Test
 
         public void Test()
         {
+            int i = 1;
             try
             {
-                MainPage mainPage = new MainPage(_driver);
-                About about = mainPage.goToAbout(_driver);
-                Assert.AreEqual(about.getTitle().ToString(), "About");
-                Console.WriteLine("About Page opened successfully");
-                Products products = about.goToProducts(_driver);
-                Assert.AreEqual(products.getTitle().ToString(), "Products");
-                Console.WriteLine("Products Page opened successfully");
-               
+                about.goToPage();
+                Assert.AreEqual("About", about.getTitle().ToString());
+                Console.WriteLine("Step " + ++i + ": About Page opened successfully");
+                products.goToPage();
+                Assert.AreEqual("Products", products.getTitle().ToString());
+                Console.WriteLine("Step " + ++i + ": Products Page opened successfully");
+                
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Step " + ++i + ": " + ex.Message);
             }
             
         }
